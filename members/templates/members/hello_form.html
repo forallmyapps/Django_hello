@@ -1,0 +1,23 @@
+<!-- members/templates/members/hello_form.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hallo-formulier</title>
+</head>
+<body>
+    <h1>Warming-up</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>Jouw naam:
+        <input type="text" name="name" required>
+        </label>
+        <button type="submit">Zeg hallo</button>
+    </form>
+    {% if message %}
+    <p><strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+</html>

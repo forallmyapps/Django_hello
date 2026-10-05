@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>&lt; {{ head_title }} &gt;</title>
+    <link rel="stylesheet" href="{% static 'members/css/style.css' %}">
+</head>
+<body>
+    <p>
+    <div class="nav-menu">
+    <ul>
+        <li><a href="#">Add member</a></li>
+        <li><a href="{% url 'hello-form' %}">Welcome</a></li>
+        <li><a href="{% url 'member-list' %}">Member list</a></li>
+    </ul>
+    </div>
+    </p>
+
+    <h1>{{ body_title }}</h1>
+
+    <form method="post" novalidate>
+        {% csrf_token %}
+        <fieldset>
+        <div class="form-fields">
+            {{ form.as_p  }}
+        </div>
+        </fieldset>
+        <br>
+
+        <button>Save</button>
+    </form>
+    <br>
+
+</body>
+</html>

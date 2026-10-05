@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    max-width: 40rem;
+    margin: 3rem auto;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    height: 20px;
+    width: 120px;
+    padding: 1px;
+    text-align: center;
+    border: 2px solid #FFC7C7;
+    border-radius: 25px;
+    background-color:  #FFC7C7;
+    box-shadow: 4px 4px 4px lightgray;
+}
+
+li:hover{
+    display: inline-block;
+    height: 20px;
+    width: 120px;
+    padding: 1px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 25px;
+    background-color: #FFA7A7;
+    box-shadow: 4px 4px 4px lightgray;
+}
+
+li:hover a {
+    color: blue;
+}
+
+form  {
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid blue;
+    border-radius: 25px;
+    color: blue;
+    padding: 20px;
+    background-color: #FFE7E7;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.form-fields {
+    display: table;
+    margin: 0 auto;
+}
+
+.form-fields p {
+    display: table-row;
+}
+
+.form-fields label {
+    display: table-cell;
+    padding-right: 16px;
+}
+
+.form-fields input {
+    display: table-cell;
+    border: 2px solid blue;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px lightblue;
+}
+
+button {
+    display:block;
+    margin:0 auto;
+    background-color: blue;
+    color: #FFE7E7;
+    border-radius: 25px;
+    padding-top: 3px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 3px;
+}
+
+
+button:hover {
+    display:block;
+    color: #FFA7A7;
+}
+

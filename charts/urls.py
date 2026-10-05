@@ -1,10 +1,9 @@
 # from django . contrib import admin
 from django . urls import path
-from charts.views import plaatje
+from charts.views import simple_plot_png
 
 urlpatterns = [
-    # path ('admin/', admin.site.urls),
-    path("plaatje/", plaatje, name="plaatje"),
+    path("plot.png", simple_plot_png, name="simple_plot_png"),
 ]
 
 

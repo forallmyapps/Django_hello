@@ -1,9 +1,9 @@
 # from django . contrib import admin
 from django . urls import path
-from budget.views import transacties
+from budget.views import transacties, upload
 
 urlpatterns = [
-    # path ('admin/', admin.site.urls),
+    path('', upload, name='upload'),
     path("transacties/", transacties, name="transacties"),
 ]
 

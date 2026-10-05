@@ -1,0 +1,16 @@
+<!-- budget/templates/budget/upload.html -->
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Bankafschrift uploaden</title></head>
+<body>
+    <h1>Bankafschrift uploaden</h1>
+
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Uploaden</button>
+    </form>
+</body>
+</html>

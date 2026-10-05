@@ -1,6 +1,5 @@
 from django.shortcuts import render
-
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 def hello2_view(request):
     ctx = {"body_title": "De 2e django app", "head_title": "Second Django App",  "items": ["Python", "Django", "ORM"]}

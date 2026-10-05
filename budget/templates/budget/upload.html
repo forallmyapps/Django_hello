@@ -1,11 +1,15 @@
 <!-- budget/templates/budget/upload.html -->
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-        <meta charset="utf-8">
-        <title>Bankafschrift uploaden</title></head>
+    <meta charset="utf-8">
+    <title>Bankafschrift uploaden</title></head>
 <body>
     <h1>Bankafschrift uploaden</h1>
+    <p>
+    <a href="{%url 'transacties'%}">Terug naar transacties</a> |
+    <a href="{%url 'grafiek'%}">Bekijk grafiek</a>
+    </p>
 
     <form method="post" enctype="multipart/form-data">
     {% csrf_token %}

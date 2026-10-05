@@ -1,0 +1,16 @@
+<!-- budget/templates/budget/grafiek.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grafiek</title></head>
+<body>
+    <h1>Uitgaven per categorie</h1>
+    <p>
+    <a href="{%url 'transacties'%}">Terug naar transacties</a> |
+    <a href="{%url 'upload'%}">Nieuw bestand uploaden</a>
+    </p>
+    <img src="data:image/png;base64,{{ afbeelding }}" alt="Grafiek">
+</body>
+</html>
+
